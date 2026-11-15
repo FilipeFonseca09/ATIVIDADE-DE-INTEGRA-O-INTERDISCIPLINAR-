@@ -1,0 +1,87 @@
+.produto {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 36px 24px 70px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--vinho);
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+.produto-corpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.produto-corpo img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #efefef;
+}
+
+.produto-info .tag {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--vinho);
+}
+
+.produto-info h1 {
+    margin: 8px 0 14px;
+    font-size: 32px;
+}
+
+.produto-info .descricao {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.produto-info .detalhe {
+    font-size: 14px;
+    color: var(--cinza);
+    margin-bottom: 22px;
+}
+
+.produto-info .preco {
+    display: block;
+    margin-bottom: 22px;
+    font-size: 28px;
+}
+
+.btn-comprar {
+    padding: 14px 32px;
+    font-size: 15px;
+}
+
+.btn-comprar.adicionado {
+    background: #2e7d4f;
+    border-color: #2e7d4f;
+}
+
+[data-tema="escuro"] .produto-info .tag,
+[data-tema="escuro"] .voltar {
+    color: var(--vinho-claro);
+}
+
+@media (max-width: 720px) {
+    .produto-corpo {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .produto-corpo img {
+        height: 260px;
+    }
+}

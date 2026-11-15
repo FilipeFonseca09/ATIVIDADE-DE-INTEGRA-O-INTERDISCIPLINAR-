@@ -1,0 +1,119 @@
+.btn-tema {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1.5px solid var(--borda);
+    border-radius: 8px;
+    background: var(--branco);
+    color: var(--vinho);
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btn-tema:hover {
+    background: var(--creme);
+    transform: translateY(-1px);
+}
+
+.icone-sol {
+    display: none;
+}
+
+[data-tema="escuro"] .icone-sol {
+    display: block;
+}
+
+[data-tema="escuro"] .icone-lua {
+    display: none;
+}
+
+[data-tema="escuro"] {
+    --vinho: #8a2244;
+    --vinho-claro: #e58aa6;
+    --creme: #2e2226;
+    --texto: #f2ece8;
+    --cinza: #b3a7ab;
+    --borda: #3a2c30;
+    --fundo: #1a1315;
+    --superficie: #241a1d;
+}
+
+[data-tema="escuro"] body {
+    background: var(--fundo);
+}
+
+[data-tema="escuro"] .header,
+[data-tema="escuro"] .perfil-card,
+[data-tema="escuro"] .card-pizza,
+[data-tema="escuro"] .filtro,
+[data-tema="escuro"] .btn-contorno,
+[data-tema="escuro"] .btn-tema,
+[data-tema="escuro"] .campo input[type="text"],
+[data-tema="escuro"] .campo input[type="email"],
+[data-tema="escuro"] .campo input[type="tel"],
+[data-tema="escuro"] .campo input[type="password"] {
+    background: var(--superficie);
+}
+
+[data-tema="escuro"] .busca input,
+[data-tema="escuro"] .campo input,
+[data-tema="escuro"] .obs textarea,
+[data-tema="escuro"] .filtro,
+[data-tema="escuro"] .qtd button {
+    color: var(--texto);
+}
+
+[data-tema="escuro"] .obs textarea {
+    background: var(--superficie);
+}
+
+[data-tema="escuro"] .filtro.ativo {
+    background: var(--vinho);
+    color: #fff;
+}
+
+[data-tema="escuro"] .menu a.ativo {
+    color: var(--vinho-claro);
+    border-bottom-color: var(--vinho-claro);
+}
+
+[data-tema="escuro"] .btn-contorno,
+[data-tema="escuro"] .btn-tema,
+[data-tema="escuro"] .card-info .tag,
+[data-tema="escuro"] .termos a,
+[data-tema="escuro"] .link-vinho,
+[data-tema="escuro"] .linha.total strong,
+[data-tema="escuro"] .remover,
+[data-tema="escuro"] .continuar {
+    color: var(--vinho-claro);
+}
+
+[data-tema="escuro"] .btn-primario:hover:not(:disabled) {
+    background: #a52a55;
+}
+
+[data-tema="escuro"] .btn-contorno:hover:not(:disabled),
+[data-tema="escuro"] .btn-tema:hover {
+    background: var(--creme);
+}
+
+[data-tema="escuro"] .card-pizza,
+[data-tema="escuro"] .perfil-card,
+[data-tema="escuro"] .resumo {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+[data-tema="escuro"] .msg-pedido {
+    background: #17301f;
+    color: #8fd3a8;
+}
+
+[data-tema="escuro"] .toast {
+    background: #3a1822;
+}
+
+[data-tema="escuro"] .header .logo img {
+    height: 36px;
+}

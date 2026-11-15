@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiFonseca Delivery • Meu perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo"><img src="logo.png" alt="DiFonseca Pizzaria"></a>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="carrinho.html">Meus pedidos</a>
+        </nav>
+
+        <form class="busca" action="calabresa.html">
+            <input type="search" placeholder="Busque pelo seu ingrediente">
+        </form>
+
+        <div class="header-acoes">
+            <button type="button" class="btn-tema" aria-label="Alternar modo escuro">
+                <svg class="icone-lua" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+                <svg class="icone-sol" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+            <a href="login.html" class="btn btn-contorno">Entrar</a>
+            <a href="carrinho.html" class="btn btn-primario">Carrinho  <span> </span></a>
+        </div>
+    </header>
+
+    <main class="perfil">
+        <aside class="perfil-card">
+            <div class="avatar" id="avatar">?</div>
+            <h2 id="perfil-nome">Seu perfil</h2>
+            <p id="perfil-email">Preencha seus dados para agilizar o pedido.</p>
+            <button type="button" class="btn btn-contorno btn-grande" id="btn-sair">Sair da conta</button>
+        </aside>
+
+        <section class="perfil-dados">
+            <h1>Meu perfil</h1>
+            <p class="sub">Mantenha seus dados em dia para o pedido chegar certinho.</p>
+
+            <p class="msg-pedido" id="msg-perfil" hidden>Dados salvos com sucesso!</p>
+
+            <form id="form-perfil">
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular" placeholder="(11) 90000-0000">
+                </div>
+
+                <div class="campo">
+                    <label for="endereco">Endereço de entrega</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número e complemento">
+                </div>
+
+                <div class="campo">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Seu bairro">
+                </div>
+
+                <button type="submit" class="btn btn-primario">Salvar alterações</button>
+            </form>
+
+            <h2>Últimos pedidos</h2>
+            <div id="lista-pedidos"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-topo">
+            <div class="footer-logo">
+                <img src="LogoRoda.png" alt="DiFonseca Pizzaria">
+            </div>
+
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="carrinho.html">Meus pedidos</a></li>
+                    <li><a href="perfil.html">Minha conta</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Bateu aquela fome?</h4>
+                <p>Todos os dias · 18h às 23h</p>
+                <p>(11) 9999-7890</p>
+                <p class="footer-whats">Fale com a pizzaria</p>
+            </div>
+        </div>
+
+        <div class="footer-base">
+            <span>© DiFonseca Delivery · Feito com carinho. Entregue quentinho.</span>
+            <nav>
+                
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
